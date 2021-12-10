@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/1061603885/xiaowin-ui/issues"
   },
-  "homepage": "https://github.com/1061603885/xiaowin-ui#readme",
+  "homepage": "https://1061603885.github.io/xiaowin-ui/",
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",
@@ -45,7 +45,8 @@
   "dependencies": {
     "@umijs/plugin-sass": "^1.1.1",
     "react": "^16.12.0 || ^17.0.0",
-    "sass-loader": "^12.4.0"
+    "sass-loader": "^12.4.0",
+    "umi-plugin-gh-pages": "^1.0.1"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.15.1",
