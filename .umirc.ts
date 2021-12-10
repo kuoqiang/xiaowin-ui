@@ -3,7 +3,7 @@
  * @Author: xiaowin
  * @Date: 2021-11-22 16:43:09
  * @LastEditors: guoqiang
- * @LastEditTime: 2021-12-10 17:25:54
+ * @LastEditTime: 2021-12-10 17:43:30
  * @Copyright:  ©云粒智慧科技有限公司 All rights reserved
  */
 import { defineConfig } from 'dumi';
@@ -14,8 +14,9 @@ export default defineConfig({
   title: 'xiaowin-ui',
   favicon: BaseUrl + '/images/favicon.ico',
   logo: BaseUrl + '/images/logo1.png',
-  outputPath: 'docs-dist',
-  publicPath: './',
+  outputPath: 'doc-site',
+  base: '/xiaowin-ui/',
+  publicPath: '/xiaowin-ui/',
   description: '小win的个人react组件库',
   navs: [
     {
