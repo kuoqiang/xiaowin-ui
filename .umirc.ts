@@ -3,7 +3,7 @@
  * @Author: xiaowin
  * @Date: 2021-11-22 16:43:09
  * @LastEditors: guoqiang
- * @LastEditTime: 2021-11-23 11:32:47
+ * @LastEditTime: 2021-12-03 15:04:26
  * @Copyright:  ©云粒智慧科技有限公司 All rights reserved
  */
 import { defineConfig } from 'dumi';
@@ -31,16 +31,7 @@ export default defineConfig({
     },
     {
       title: 'GitHub',
-      path: '/help',
+      path: '/Github',
     },
   ],
-  menus: {
-    // 需要自定义侧边菜单的路径，没有配置的路径还是会使用自动生成的配置
-    '/cpmponents': [
-      {
-        title: 'Button (按钮)',
-        path: '/components/Button',
-      },
-    ],
-  },
 });

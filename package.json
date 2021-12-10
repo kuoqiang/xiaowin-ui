@@ -13,6 +13,14 @@
     "test": "umi-test",
     "test:coverage": "umi-test --coverage"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1061603885/xiaowin-ui.git"
+  },
+  "homepage": "https://github.com/1061603885/xiaowin-ui#readme",
+  "bugs": {
+    "url": "https://github.com/1061603885/xiaowin-ui/issues"
+  },
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "typings": "dist/index.d.ts",
@@ -28,7 +36,10 @@
     ]
   },
   "dependencies": {
-    "react": "^16.12.0 || ^17.0.0"
+    "@umijs/plugin-sass": "^1.1.1",
+    "node-sass": "^6.0.1",
+    "react": "^16.12.0 || ^17.0.0",
+    "sass-loader": "^12.3.0"
   },
   "devDependencies": {
     "@umijs/test": "^3.0.5",

@@ -1,0 +1,25 @@
+.xiaowin-col {
+  float: left;
+  margin: 1px 0px;
+  box-sizing: border-box;
+}
+
+@for $i from 1 through 24 {
+  .xiaowin-col-#{$i} {
+    width: calc($i / 24 * 100%);
+  }
+
+  .xiaowin-col-offset-#{$i} {
+    margin-left: calc($i / 24 * 100%);
+  }
+
+  .xiaowin-col-push-#{$i} {
+    position: relative;
+    left: calc($i / 24 * 100%);
+  }
+
+  .xiaowin-col-pull-#{$i} {
+    position: relative;
+    right: calc($i / 24 * 100%);
+  }
+}
