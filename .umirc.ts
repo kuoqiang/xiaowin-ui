@@ -3,11 +3,11 @@
  * @Author: xiaowin
  * @Date: 2021-11-22 16:43:09
  * @LastEditors: guoqiang
- * @LastEditTime: 2021-12-10 17:43:30
+ * @LastEditTime: 2021-12-13 18:02:26
  * @Copyright:  ©云粒智慧科技有限公司 All rights reserved
  */
 import { defineConfig } from 'dumi';
-let BaseUrl = '';
+let BaseUrl = '/xiaowin-ui';
 
 export default defineConfig({
   mode: 'site', // site: 站点模式（导航头 + 左侧菜单 + 右侧内容）。 doc：文档
@@ -33,7 +33,7 @@ export default defineConfig({
     },
     {
       title: 'GitHub',
-      path: '/Github',
+      path: 'https://github.com/1061603885/xiaowin-ui',
     },
   ],
 });

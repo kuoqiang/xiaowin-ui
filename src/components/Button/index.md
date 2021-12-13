@@ -3,8 +3,6 @@ group:
   title: Button 按钮
   order: 1
 toc: false
-demo:
-  title: Buttttt
 ---
 
 demo
@@ -13,7 +11,7 @@ demo
 import React from 'react';
 import { Button } from 'xiaowin-ui';
 
-export default () => <Button>快乐</Button>;
+export default () => <Button>button 1</Button>;
 ```
 
 字体颜色
@@ -22,5 +20,9 @@ export default () => <Button>快乐</Button>;
 import React from 'react';
 import { Button } from 'xiaowin-ui';
 
-export default () => <Button color="red">hahahha</Button>;
+export default () => (
+  <Button type="primary" color="green">
+    button 2
+  </Button>
+);
 ```

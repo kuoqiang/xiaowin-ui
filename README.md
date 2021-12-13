@@ -1,33 +1,55 @@
-# xiaowin-ui
+<!--
+ * @Descripttion: Bernard
+ * @Author: xiaowin
+ * @Date: 2021-11-22 16:43:09
+ * @LastEditors: guoqiang
+ * @LastEditTime: 2021-12-13 18:06:11
+ * @Copyright:  ©云粒智慧科技有限公司 All rights reserved
+-->
 
-## Getting Started
+### 文档地址放在开头
 
-Install dependencies,
+[文档传送门]](https://1061603885.github.io/xiaowin-ui/)
 
-```bash
-$ npm i
+**使用 npm 或 yarn 安装**
+
+```shell
+npm install xiaowin-ui
 ```
 
-Start the dev server,
-
-```bash
-$ npm start
+```shell
+yarn add xiaowin-ui
 ```
 
-Build documentation,
+### 自动按需加载
 
-```bash
-$ npm run docs:build
+使用 [babel-plugin-import ](https://www.npmjs.com/package/babel-plugin-import) 优化引入方式，如下：
+
+```js
+import { Button } from 'xiaowin-ui'; // 与上述示例等价
+
+ReactDOM.render(<Button type="primary">按钮</Button>, mountNode);
 ```
 
-Run test,
+安装 `babel-plugin-import`
 
-```bash
-$ npm test
+```
+yarn add babel-plugin-import --dev
 ```
 
-Build library via `father-build`,
+配置`.babelrc` 或 `babel-loader`
 
-```bash
-$ npm run build
+```json
+{
+  "plugins": [
+    [
+      "import",
+      {
+        "libraryName": "@zzzzw/happy-ui",
+        "libraryDirectory": "esm", // default: lib
+        "style": true // or 'css'
+      }
+    ]
+  ]
+}
 ```
