@@ -3,7 +3,7 @@
  * @Author: xiaowin
  * @Date: 2021-11-22 17:52:40
  * @LastEditors: guoqiang
- * @LastEditTime: 2021-12-13 15:45:19
+ * @LastEditTime: 2021-12-14 18:32:09
  * @Copyright:  ©云粒智慧科技有限公司 All rights reserved
  */
 
@@ -16,6 +16,7 @@ interface Props {
   children: FC;
   type: string;
   style: Object;
+  size: string;
 }
 
 const Button: FC<Props> = ({
@@ -23,10 +24,12 @@ const Button: FC<Props> = ({
   color,
   type = 'default',
   style = {},
+  size = 'default',
 }: Props) => {
   let classNames = classnames({
     'xiaowin-button': true,
     [`xiaowin-button_${type}`]: true,
+    [`xiaowin-button-size_${size}`]: true,
   });
   return (
     <button className={classNames} style={{ color: color, ...style }}>
