@@ -3,7 +3,7 @@
  * @Author: xiaowin
  * @Date: 2021-12-16 18:00:12
  * @LastEditors: guoqiang
- * @LastEditTime: 2021-12-17 18:25:03
+ * @LastEditTime: 2021-12-31 15:51:02
  * @Copyright:  ©云粒智慧科技有限公司 All rights reserved
  */
 
@@ -13,23 +13,28 @@ import classnames from 'classnames';
 
 const PI = 314;
 
-interface Props {
+export interface ProgressProps {
   r: string | number;
   strokeWidth: string | number;
   fill: string;
   stroke: string;
-  progress?: number | string;
+  progress?: string | number;
   strokeLinecap: 'butt' | 'round' | 'square';
   deg?: number | string;
+  donecolor: string;
+  trackline: boolean;
 }
 
-const SVGAnimate: FC<Props> = (prop: Props) => {
+const Progress: FC<ProgressProps> = (prop) => {
   let cr = Number(prop.r) + Number(prop.strokeWidth);
   let Circumference = PI * (Number(prop.r) / 50);
   let classNames = classnames({
     'xiaowin-svg': true,
-    // 'xiaowin-svg-linecap': prop.linecap
+    // [`xiaowin-svg-linecap_${prop.strokeLinecap}`]: prop.strokeLinecap
   });
+
+  let trackline = true;
+  if ('trackline' in prop) trackline = prop.trackline;
 
   let options = {
     ...prop,
@@ -42,14 +47,26 @@ const SVGAnimate: FC<Props> = (prop: Props) => {
     ).toFixed(2),
     transform: `rotate(${prop.deg || -90} ${cr} ${cr})`,
   };
-  if (options.progress >= 1) {
-    options.stroke = options.doneColor || 'green';
+  if (Number(options.progress) >= 1) {
+    options.stroke = options.donecolor || 'green';
   }
   delete options?.progress;
   delete options?.deg;
 
   return (
     <svg width={2 * cr} height={2 * cr}>
+      {trackline == true && (
+        <circle
+          className={classNames}
+          fill="none"
+          r={prop.r}
+          strokeDasharray={Circumference}
+          strokeWidth={prop.strokeWidth}
+          cx={cr}
+          cy={cr}
+          stroke="#eee"
+        ></circle>
+      )}
       <circle className={classNames} {...options}></circle>
       <text
         x={cr}
@@ -65,4 +82,6 @@ const SVGAnimate: FC<Props> = (prop: Props) => {
   );
 };
 
-export default SVGAnimate;
+// Progress.FloatProgress = FloatProgress;
+
+export default Progress;

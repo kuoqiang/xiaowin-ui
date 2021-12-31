@@ -41,7 +41,7 @@ yarn add babel-plugin-import --dev
     [
       "import",
       {
-        "libraryName": "@zzzzw/happy-ui",
+        "libraryName": "xiaowin-ui",
         "libraryDirectory": "esm", // default: lib
         "style": true // or 'css'
       }

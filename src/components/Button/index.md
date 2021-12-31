@@ -3,6 +3,7 @@ group:
   title: Button 按钮
   order: 1
 toc: false
+footer: but重复造轮子本身就是一种乐趣
 ---
 
 **基本使用**

@@ -1,4 +1,6 @@
 ---
+group:
+  title: xiaowin-ui
 hero:
   title: xiaowin-ui
   desc: 基于react的个人 UI 组件库

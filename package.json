@@ -1,7 +1,7 @@
 {
   "private": false,
   "name": "xiaowin-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Personal component library",
   "keywords": [
     "react",
@@ -22,6 +22,7 @@
     "docs:build": "dumi build",
     "docs:deploy": "gh-pages -d docs-dist",
     "build:site": "rimraf doc-site && dumi build",
+    "build": "rimraf doc-site && dumi build",
     "deploy:site": "npm run build:site && gh-pages -d doc-site",
     "deploy": "npm run build:site && gh-pages -d doc-site",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
@@ -47,6 +48,7 @@
     "@umijs/plugin-sass": "^1.1.1",
     "classnames": "^2.3.1",
     "react": "^16.12.0 || ^17.0.0",
+    "react-uuid": "^1.0.2",
     "sass-loader": "^12.4.0",
     "umi-plugin-gh-pages": "^1.0.1"
   },
@@ -54,6 +56,7 @@
     "@testing-library/jest-dom": "^5.15.1",
     "@testing-library/react": "^12.1.2",
     "@types/jest": "^27.0.3",
+    "@types/uuid": "^8.3.3",
     "@umijs/fabric": "^2.8.1",
     "@umijs/test": "^3.0.5",
     "dumi": "^1.1.0",

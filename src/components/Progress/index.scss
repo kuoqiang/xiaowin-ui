@@ -1,0 +1,75 @@
+.xiaowin-svg {
+  transition: stroke-dashoffset 1s;
+
+  &-linecap_round {
+    stroke-linecap: round;
+  }
+  &-linecap_butt {
+    stroke-linecap: butt;
+  }
+  &-linecap_square {
+    stroke-linecap: square;
+  }
+}
+
+
+// 波浪滚动样式
+.xiaowin-floatProgress {
+  padding: 5px;
+  // border: 5px solid rgb(118, 218, 255);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.wave {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  // background-color: rgb(118, 218, 255);
+  border-radius: 50%;
+
+  .rotate1,
+  .rotate2 {
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -60%;
+    left: 50%;
+    background-color: rgba(255, 255, 255, .4);
+    border-radius: 45%;
+    transform: translate(-50%, -53%) rotate(0);
+    animation: rotate 4s linear infinite;
+    transition: top .6s;
+    z-index: 1;
+  }
+
+  .rotate2 {
+    border-radius: 47%;
+    background-color: rgba(255, 255, 255, .9);
+    transform: translate(-50%, -53%) rotate(0);
+    animation: rotate 6s linear -5s infinite;
+    z-index: 2;
+  }
+
+
+
+  .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    z-index: 10;
+  }
+}
+
+
+@keyframes rotate {
+  50% {
+    transform: translate(-50%, -56%) rotate(180deg);
+  }
+
+  100% {
+    transform: translate(-50%, -53%) rotate(360deg);
+  }
+}

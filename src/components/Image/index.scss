@@ -1,0 +1,26 @@
+.xiaowin-Image {
+  // &_mask {
+  //   position: relative;
+  //   background-size: 100% 100%;
+  //   // background-image: url("https://z3.ax1x.com/2021/09/30/4oaTAO.jpg");
+  //   background-repeat: no-repeat;
+
+  //   &::after {
+  //     content: "";
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     bottom: 0;
+  //     right: 0;
+  //     // 国旗图片
+  //     // background: url("https://z3.ax1x.com/2021/09/30/4oUAiQ.png") no-repeat;
+  //     background-size: cover;
+  //     mask: linear-gradient(110deg, #000 10%, transparent 70%, transparent)
+  //   }
+  // }
+}
+
+
+.xiaowin-mask {
+  mask: linear-gradient(110deg, #000 10%, transparent 70%, transparent)
+}
