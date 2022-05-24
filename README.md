@@ -9,7 +9,7 @@
 
 ### 文档地址放在开头
 
-[文档传送门]](https://1061603885.github.io/xiaowin-ui/)
+[文档传送门]](https://kuoqiang.github.io/xiaowin-ui/)
 
 **使用 npm 或 yarn 安装**
 
