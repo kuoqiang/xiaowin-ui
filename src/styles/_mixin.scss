@@ -32,8 +32,14 @@
 
   &:disabled,
   &.disabled {
-    color: $color;
-    background: $background;
-    border-color: $border;
+    // color: $color;
+    // background: $background;
+    // border-color: $border;
+    box-shadow: none;
+    color: #00000040;
+    border-color: #d9d9d9;
+    background: #f5f5f5;
+    text-shadow: none;
+    box-shadow: none;
   }
 }

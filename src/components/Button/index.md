@@ -15,9 +15,15 @@ import { Button } from 'xiaowin-ui';
 export default () => (
   <>
     <div>
-      <Button size="small">button 3</Button>
-      <Button size="middle">button 1</Button>
-      <Button size="large">button 4</Button>
+      <Button type="primary" size="small">
+        small
+      </Button>
+      <Button type="primary" size="middle">
+        middle
+      </Button>
+      <Button type="primary" size="large">
+        large
+      </Button>
     </div>
   </>
 );
@@ -31,10 +37,13 @@ import { Button } from 'xiaowin-ui';
 
 export default () => (
   <>
-    <Button type="primary">button 1</Button>
-    <Button type="success">button 2</Button>
-    <Button type="warning">button 4</Button>
-    <Button type="danger">button 4</Button>
+    <Button type="primary">primary</Button>
+    <Button type="success">success</Button>
+    <Button type="warning">warning</Button>
+    <Button type="danger">danger</Button>
+    <Button type="primary" disabled>
+      disabled
+    </Button>
   </>
 );
 ```
@@ -45,5 +54,12 @@ export default () => (
 import React from 'react';
 import { Button } from 'xiaowin-ui';
 
-export default () => <Button type="link">button 2</Button>;
+export default () => (
+  <>
+    <Button type="link">link</Button>
+    <Button type="link" disabled>
+      link disabled
+    </Button>
+  </>
+);
 ```
