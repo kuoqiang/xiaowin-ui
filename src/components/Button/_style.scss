@@ -75,12 +75,8 @@
 
   &.disabled,
   &[disabled] {
-    // color: $btn-link-disabled-color;
-    // pointer-events: none;
+    @include disabled(none, #00000040, none, none);
     text-decoration: none;
-    box-shadow: none;
-    color: #00000040;
-    text-shadow: none;
-    box-shadow: none;
+
   }
 }

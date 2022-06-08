@@ -1,0 +1,44 @@
+.xiaowin-alert {
+  box-sizing: border-box;
+  margin: 0;
+  color: $baseFontColor;
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  list-style: none;
+  font-feature-settings: "tnum";
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 8px 15px;
+  word-wrap: break-word;
+  border-radius: 2px;
+}
+
+.xiaowin-alert-info {
+  @include alert-style($info)
+}
+
+.xiaowin-alert-warning {
+  @include alert-style($warning)
+}
+
+.xiaowin-alert-error {
+  @include alert-style($error)
+}
+
+.xiaowin-alert-success {
+  @include alert-style($success)
+}
+
+.xiaowin-close-icon {
+  margin-left: 8px;
+  padding: 0;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 12px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

@@ -16,18 +16,20 @@ $purple: #6f42c1 !default;
 $pink: #d63384 !default;
 $red: #dc3545 !default;
 $orange: #fd7e14 !default;
-$yellow: #fadb14 !default;
+$yellow: #faad14 !default;
 $green: #52c41a !default;
 $teal: #20c997 !default;
 $cyan: #17a2b8 !default;
 $primary:#4C84FF !default;
 $secondary: $gray-600 !default;
 $success: #52c41a !default;
-$info: $cyan !default;
+$info: #1890ff !default;
 $warning: #faad14 !default;
 $danger: #ff4d4f !default;
+$error:#ff4d4f !default;
 $light: $gray-100 !default;
 $dark: $gray-800 !default;
+$baseFontColor: #000000d9 !default;
 
 $theme-colors: ("primary": $primary,
   "secondary": $secondary,
@@ -209,6 +211,12 @@ $btn-font-size-lg: $font-size-lg !default;
 
 // 按钮边框
 $btn-border-width: $border-width !default;
+
+// 按钮禁用
+$disabled-shadow:none !default;
+$disabled-color:#00000040 !default;
+$disabled-border-color:#d9d9d9 !default;
+$disabled-background:#f5f5f5 !default;
 
 // 按钮其他
 $btn-box-shadow: inset 0 1px 0 rgba($white, .15),

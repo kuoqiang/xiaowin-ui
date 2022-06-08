@@ -1,7 +1,7 @@
 ---
 group:
   title: Button 按钮
-  order: 1
+order: 2
 toc: false
 footer: but重复造轮子本身就是一种乐趣
 ---
@@ -63,3 +63,11 @@ export default () => (
   </>
 );
 ```
+
+**API**
+| 属性 | 说明 | 类型 | 默认值 |
+| ------------- | ---------------- | ----------------------------- | ------------- |
+| type | 按钮类型 | `primary` \| `default` \| `success`\| `danger` \| `warning` \| `link` | default |
+| size | 按钮大小 | `large` \| `small` \| `middle` | middle |
+| disabled | 是否禁用 | `boolean` | false |
+| href | 链接地址 `type为link时生效` | `string` | `undefined` |

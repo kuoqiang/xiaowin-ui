@@ -48,7 +48,7 @@ const Progress: FC<ProgressProps> = (prop) => {
     transform: `rotate(${prop.deg || -90} ${cr} ${cr})`,
   };
   if (Number(options.progress) >= 1) {
-    options.stroke = options.donecolor || 'green';
+    options.stroke = options.donecolor || '#52c41a';
   }
   delete options?.progress;
   delete options?.deg;
