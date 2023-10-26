@@ -7,7 +7,7 @@
  * @Copyright:  ©云粒智慧科技有限公司 All rights reserved
  */
 import { defineConfig } from 'dumi';
-let BaseUrl = '';
+let BaseUrl = '/xiaowin-ui';
 
 export default defineConfig({
   mode: 'site', // site: 站点模式（导航头 + 左侧菜单 + 右侧内容）。 doc：文档
@@ -15,8 +15,8 @@ export default defineConfig({
   favicon: BaseUrl + '/images/favicon.ico',
   logo: BaseUrl + '/images/logo1.png',
   outputPath: 'doc-site',
-  base: '/',
-  publicPath: '/',
+  base: '/xiaowin-ui/',
+  publicPath: '/xiaowin-ui/',
   description: '小win的个人react组件库',
   navs: [
     {
