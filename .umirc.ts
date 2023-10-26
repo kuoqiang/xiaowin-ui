@@ -16,7 +16,7 @@ export default defineConfig({
   logo: BaseUrl + '/images/logo1.png',
   outputPath: 'doc-site',
   base: '/xiaowin-ui/',
-  publicPath: './',
+  publicPath: '/xiaowin-ui/',
   description: '小win的个人react组件库',
   navs: [
     {
