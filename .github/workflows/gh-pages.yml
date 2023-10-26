@@ -7,11 +7,12 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - run: yarn
-      - run: yarn build:site
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Build
+        run: yarn && yarn build:site
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
