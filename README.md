@@ -9,7 +9,7 @@
 
 ### 文档地址放在开头
 
-[文档传送门]](https://kuoqiang.github.io/xiaowin-ui/)
+[文档传送门](https://kuoqiang.github.io/xiaowin-ui/)
 
 **使用 npm 或 yarn 安装**
 
@@ -39,7 +39,7 @@ yarn add babel-plugin-import --dev
 
 配置`.babelrc` 或 `babel-loader`
 
-```json
+```javascript
 {
   "plugins": [
     [
